@@ -68,6 +68,9 @@ important that you do it correctly.
    `main.rb` belongs in the root of your project directory. Migrations belong in
    _db/migrate/_. When in doubt, follow the convention we set up with the Bug
    Tracker.
+9. Your model methods should be *silent*, that is, they should do no output.
+   They can (and will) return values, but they should do no output and should
+   not prompt for input.
 
 # Extensions
 
@@ -100,3 +103,7 @@ important that you do it correctly.
    book clubs can be about the same book.
 9. For your book club, add in a facilitating staff member. Staff members should
    only be able to facilitate book clubs at their branch.
+10. **Advanced**: We want our staff to be able to belong to more than one branch
+    at a time (some staff members split branches). Research *many-to-many*
+    relationships and replace the one-to-many relationship between staff and
+    library branches with a many-to-many relationships.
