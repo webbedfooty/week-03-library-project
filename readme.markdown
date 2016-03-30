@@ -11,6 +11,13 @@ After forking and cloning the repository, you'll need to run `bundle install`
 and `rake db:create`.  There are no migrations yet, so you'll need to write and
 run those on your own.
 
+Once you've created your first commit, create a pull request on the [main
+repository](https://github.com/star-city-code-school/week-03-library-project) so
+I can see your work as you progress.
+
+We're going to build on this project for the next 10 days or so, so it's
+important that you do it correctly.
+
 # Business Domain Needs
 
 1. Libraries should have a branch name, an address, and a phone number. All of
