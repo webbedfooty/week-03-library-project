@@ -1,0 +1,5 @@
+host: 'localhost'
+adapter: 'postgresql'
+database: 'week-three-library'
+encoding: 'utf8'
+pool: 5
