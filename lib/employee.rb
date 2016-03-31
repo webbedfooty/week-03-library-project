@@ -9,4 +9,6 @@ class Employee < ActiveRecord::Base
   validates :email, presence: true
   validates :email, uniqueness: true
 
+  belongs_to :library 
+
 end

@@ -13,4 +13,6 @@ class Library < ActiveRecord::Base
   validates :address, uniqueness: true
   validates :phone, uniqueness: true
 
+  has_many :employees
+
 end
