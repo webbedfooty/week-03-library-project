@@ -3,3 +3,5 @@ adapter: 'postgresql'
 database: 'week-three-library'
 encoding: 'utf8'
 pool: 5
+username: patrick
+password: patrick
