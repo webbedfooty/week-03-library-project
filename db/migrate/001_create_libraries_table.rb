@@ -1,3 +1,4 @@
+#001_create_libraries_table.rb
 class CreateLibrariesTable < ActiveRecord::Migration
   def change
     create_table :libraries do |t|
