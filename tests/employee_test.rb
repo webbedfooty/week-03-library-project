@@ -21,7 +21,7 @@ class EmployeeTest < Minitest::Test
   end
 
   def test_validator_should_fail_employee_with_no_name
-    i = Employee.create(name: "J Quincy Adams", email: "jq@library.org")
+    i = Employee.new(name: "J Quincy Adams", email: "jq@library.org")
     assert(i.valid?, "should be valid at creation")
 
     i.name = nil
@@ -32,7 +32,7 @@ class EmployeeTest < Minitest::Test
   end
 
   def test_validator_should_fail_employee_with_no_email
-    i = Employee.create(name: "J Quincy Adams", email: "jq@library.org")
+    i = Employee.new(name: "J Quincy Adams", email: "jq@library.org")
     assert(i.valid?, "should be valid at creation")
 
     i.email = nil

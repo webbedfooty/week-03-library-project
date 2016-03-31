@@ -27,7 +27,7 @@ class LibraryTest < Minitest::Test
   end
 
   def test_validator_should_fail_library_with_no_name
-    i = Library.create(name: "Bennet Martin", address: "14th and O Street", phone: "312-999-6565")
+    i = Library.new(name: "Bennet Martin", address: "14th and O Street", phone: "312-999-6565")
     assert(i.valid?, "should be valid at creation")
 
     i.name = nil
@@ -38,7 +38,7 @@ class LibraryTest < Minitest::Test
   end
 
   def test_validator_should_fail_library_with_no_address
-    i = Library.create(name: "Bennet Martin", address: "14th and O Street", phone: "312-999-6565")
+    i = Library.new(name: "Bennet Martin", address: "14th and O Street", phone: "312-999-6565")
     assert(i.valid?, "should be valid at creation")
 
     i.address = nil
@@ -49,7 +49,7 @@ class LibraryTest < Minitest::Test
   end
 
   def test_validator_should_fail_library_with_no_phone
-    i = Library.create(name: "Bennet Martin", address: "14th and O Street", phone: "312-999-6565")
+    i = Library.new(name: "Bennet Martin", address: "14th and O Street", phone: "312-999-6565")
     assert(i.valid?, "should be valid at creation")
 
     i.phone = nil
