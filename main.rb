@@ -8,41 +8,7 @@ require "pry"
 require "yaml"
 
 ####################################
-# Library Menu
-def library_menu
-  choice = ""
-
-  while choice != "4"
-    puts "\nLibrary Main Menu"
-    puts "1. List of Libraries"
-    puts "2. List of Employees"
-    puts "3. List of Books"
-    puts "4. will return you back to the main menu"
-    print "What is your choice? "
-    choice = gets.chomp
-
-    while choice != "1" && choice != "2" && choice != "3" && choice != "4"
-      print "Sorry, that's an invalid choice."
-      print "Please try again: "
-      choice = gets.chomp
-    end
-
-    if choice == "1"
-      puts "\nHere is a list of all Libraries"
-      # library_list method
-    elsif choice == "2"
-      puts "\nHere is a list of all Employees"
-      # employee_list method
-    elsif choice == "3"
-      puts "\nHere is a list of all Books"
-      # book_list method
-    elsif choice == "4"
-      puts "\nSee ya!"
-    end
-  end
-  puts "Going back to the main menu"
-end
-
+# Main Menu
 def main_menu
   choice = ""
 
@@ -90,6 +56,43 @@ def main_menu
   end
 end
 
+####################################
+# Library Menu
+def library_menu
+  choice = ""
+
+  while choice != "4"
+    puts "\nLibrary Main Menu"
+    puts "1. List of Libraries"
+    puts "2. List of Employees"
+    puts "3. List of Books"
+    puts "4. will return you back to the main menu"
+    print "What is your choice? "
+    choice = gets.chomp
+
+    while choice != "1" && choice != "2" && choice != "3" && choice != "4"
+      print "Sorry, that's an invalid choice."
+      print "Please try again: "
+      choice = gets.chomp
+    end
+
+    if choice == "1"
+      puts "\nHere is a list of all Libraries"
+      # library_list method
+    elsif choice == "2"
+      puts "\nHere is a list of all Employees"
+      # employee_list method
+    elsif choice == "3"
+      puts "\nHere is a list of all Books"
+      # book_list method
+    elsif choice == "4"
+      puts "\nSee ya!"
+    end
+  end
+  puts "Going back to the main menu"
+end
+
+####################################
 # this is where our driver actually starts
 
 puts "\nDriver Demo! Not for Public Use"
