@@ -12,7 +12,7 @@ require "yaml"
 def library_menu
   choice = ""
 
-  while choice != "back"
+  while choice != "4"
     puts "\nLibrary Main Menu"
     puts "1. List of Libraries"
     puts "2. List of Employees"
