@@ -17,6 +17,6 @@ class Book < ActiveRecord::Base
   validates :isbn, uniqueness: true
 
   belongs_to :library
-#  belongs_to :patron
+  belongs_to :patron
 
 end
