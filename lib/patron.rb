@@ -10,4 +10,4 @@ class Patron < ActiveRecord::Base
 
   has_many :books
 
-ends
+end
