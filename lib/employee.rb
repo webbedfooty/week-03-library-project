@@ -5,10 +5,8 @@
 
 class Employee < ActiveRecord::Base
 
-  validates :name, presence: true
-  validates :email, presence: true
-  
-  validates :email, uniqueness: true
+  validates :name, presence: true, uniqueness: {case_sensitive: false}
+  validates :email, presence: true, uniqueness: {case_sensitive: false}
 
   belongs_to :library
 
