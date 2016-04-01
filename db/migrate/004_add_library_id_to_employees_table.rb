@@ -2,5 +2,5 @@
 class AddLibraryIdToEmployeesTable < ActiveRecord::Migration
   def change
     rename_column :employees, :libraries_id, :library_id
-    end
-end 
+  end
+end

@@ -2,5 +2,5 @@
 class AddLibrariesIdToEmployeesTable < ActiveRecord::Migration
   def change
     add_column :employees, :libraries_id, :integer
-    end
+  end
 end
