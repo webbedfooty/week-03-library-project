@@ -42,10 +42,10 @@ class LibraryTest < Minitest::Test
     assert(i.valid?, "should be valid at creation")
 
     i.address = nil
-    refute(i.valid?, "should be invalid without a name")
+    refute(i.valid?, "should be invalid without an address")
 
     i.address = ""
-    refute(i.valid?, "should be invalid with an empty name")
+    refute(i.valid?, "should be invalid with an empty address")
   end
 
   def test_validator_should_fail_library_with_no_phone
@@ -53,10 +53,10 @@ class LibraryTest < Minitest::Test
     assert(i.valid?, "should be valid at creation")
 
     i.phone = nil
-    refute(i.valid?, "should be invalid without a name")
+    refute(i.valid?, "should be invalid without a phone")
 
     i.phone = ""
-    refute(i.valid?, "should be invalid with an empty name")
+    refute(i.valid?, "should be invalid with an empty phone")
   end
 
 end

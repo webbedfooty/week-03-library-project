@@ -36,10 +36,10 @@ class EmployeeTest < Minitest::Test
     assert(i.valid?, "should be valid at creation")
 
     i.email = nil
-    refute(i.valid?, "should be invalid without a name")
+    refute(i.valid?, "should be invalid without an email")
 
     i.email = ""
-    refute(i.valid?, "should be invalid with an empty name")
+    refute(i.valid?, "should be invalid with an empty email")
   end
 
 end
