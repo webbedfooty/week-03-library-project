@@ -15,5 +15,6 @@ class Library < ActiveRecord::Base
   validates :phone, uniqueness: true
 
   has_many :employees
+  has_many :books
 
 end
