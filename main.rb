@@ -13,53 +13,54 @@ def library_menu
   choice = ""
 
   while choice != "back"
-    puts "\n\n\nInsects Main Menu"
+    puts "\nLibrary Main Menu"
     puts "1. List of Libraries"
     puts "2. List of Employees"
     puts "3. List of Books"
-    puts "Back: head back to the main menu"
+    puts "4. will return you back to the main menu"
     print "What is your choice? "
-    choice = gets.chomp.downcase
+    choice = gets.chomp
 
-    while choice != "1" && choice != "2" && choice != "3" && choice != "back"
+    while choice != "1" && choice != "2" && choice != "3" && choice != "4"
       print "Sorry, that's an invalid choice."
       print "Please try again: "
-      choice = gets.chomp.downcase
+      choice = gets.chomp
     end
 
     if choice == "1"
-      puts "Here is a list of all Libraries"
+      puts "\nHere is a list of all Libraries"
       # library_list method
     elsif choice == "2"
-      puts "Here is a list of all Employees"
+      puts "\nHere is a list of all Employees"
       # employee_list method
     elsif choice == "3"
-      puts "Here is a list of all Books"
+      puts "\nHere is a list of all Books"
       # book_list method
-    elsif choice == "back"
-      puts "See ya!"
+    elsif choice == "4"
+      puts "\nSee ya!"
     end
   end
-  puts "back to the main menu"
+  puts "Going back to the main menu"
 end
 
 def main_menu
   choice = ""
 
   while choice != "exit"
-    puts "\n\nWelcome to Eratos"
+    puts "\nWelcome to Eratos"
     puts "\nMain Menu Options:"
     puts "1. Library Menu"
     puts "2. Book Menu"
     puts "3. Employee Menu"
-    puts "4. Paton Menu"
+    puts "4. Patron Menu"
     puts "Exit: Exit"
     print "\nWhat is your choice? "
     choice = gets.chomp.downcase
 
     while choice != "1" && choice != "2" && choice != "3" &&
        choice != "4" && choice != "exit"
-      print "Sorry, that's not a valid option. Try again: "
+       print "Sorry, that's an invalid choice."
+       print "Please try again: "
       choice = gets.chomp.downcase
     end
 
@@ -91,19 +92,12 @@ end
 
 # this is where our driver actually starts
 
-puts "Welcome to Our Driver Demo!"
+puts "\nDriver Demo! Not for Public Use"
 main_menu
 puts "Goodbye"
 
 ####################################
 # Book Menu
-
-
-
-
-
-
-
 
 
 
