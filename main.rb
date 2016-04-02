@@ -25,9 +25,9 @@ def main_menu
 
     while choice != "l" && choice != "b" && choice != "e" &&
        choice != "p" && choice != "exit"
-       print "Sorry, that's an invalid choice."
-       print "Please try again: "
-      choice = gets.chomp.downcase
+        print "Sorry, that's an invalid choice."
+        print "Please try again: "
+       choice = gets.chomp.downcase
     end
 
     if choice == "l"
@@ -68,12 +68,12 @@ def library_menu
     puts "Type B for a List of Books"
     puts "9. will return you back to the main menu"
     print "What is your choice? "
-    choice = gets.chomp.downcase
+      choice = gets.chomp.downcase
 
     while choice != "l" && choice != "e" && choice != "b" && choice != "9"
-      print "Sorry, that's an invalid choice."
-      print "Please try again: "
-    choice = gets.chomp.downcase
+        print "Sorry, that's an invalid choice."
+        print "Please try again: "
+      choice = gets.chomp.downcase
     end
 
     if choice == "l"
@@ -109,12 +109,12 @@ def book_menu
     puts "Type B for a List of Books"
     puts "9. will return you back to the main menu"
     print "What is your choice? "
-    choice = gets.chomp.downcase
+      choice = gets.chomp.downcase
 
     while choice != "l" && choice != "e" && choice != "b" && choice != "9"
-      print "Sorry, that's an invalid choice."
-      print "Please try again: "
-    choice = gets.chomp.downcase
+        print "Sorry, that's an invalid choice."
+        print "Please try again: "
+      choice = gets.chomp.downcase
     end
 
     if choice == "l"
@@ -145,12 +145,12 @@ def employee_menu
     puts "Type B for a List of Books"
     puts "9. will return you back to the main menu"
     print "What is your choice? "
-    choice = gets.chomp.downcase
+      choice = gets.chomp.downcase
 
     while choice != "l" && choice != "e" && choice != "b" && choice != "9"
-      print "Sorry, that's an invalid choice."
-      print "Please try again: "
-    choice = gets.chomp.downcase
+        print "Sorry, that's an invalid choice."
+        print "Please try again: "
+      choice = gets.chomp.downcase
     end
 
     if choice == "l"
@@ -181,13 +181,13 @@ def patron_menu
     puts "Type P for a List of Patrons"
     puts "9. will return you back to the main menu"
     print "What is your choice? "
-    choice = gets.chomp.downcase
+      choice = gets.chomp.downcase
 
     while choice != "l" && choice != "e" && choice != "b" &&
       choice != "p" && choice != "9"
-      print "Sorry, that's an invalid choice."
-      print "Please try again: "
-    choice = gets.chomp.downcase
+        print "Sorry, that's an invalid choice."
+        print "Please try again: "
+      choice = gets.chomp.downcase
     end
 
     if choice == "l"
